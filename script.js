@@ -6,7 +6,7 @@ if (sessionStorage.hasOwnProperty('lang')) {
 }
 const body = document.querySelector('body');
 const div = document.createElement('div');
-const textArea = '<div class = "wrapper_textArea"> <textArea class = "textArea" , rows = "15",> </textArea> <div class = "alert"> <span class = "span"> У ВАС ВКЛЮЧЕН CAPSCLOCK !!! </span></div> </div> ';
+const textArea = '<div class = "wrapper_textArea">  Смена языка ввода - Ctrl + Alt.   Сделано в ОС Windows  <textArea class = "textArea" , rows = "15",> </textArea> <div class = "alert"> <span class = "span"> У ВАС ВКЛЮЧЕН CAPSCLOCK !!! </span></div> </div> ';
 
 const keyboardEng = [['special', '`', '~'], ['special', 1, '!'], ['special', 2, '@'], ['special', 3, '#'], ['special', 4, '$'], ['special', 5, '%'],
     ['special', 6, '^'], ['special', 7, '&'], ['special', 8, '*'], ['special', 9, '('], ['special', 0, ')'], ['special', '-', '_'], ['special', '=', '+'],
