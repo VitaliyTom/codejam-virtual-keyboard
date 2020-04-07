@@ -15,7 +15,6 @@ body {
 	margin: auto;
 	font-size: 1.2rem;
 	background-color: rgb(197, 177, 163);
-	
 }
 
 .container {
@@ -41,7 +40,7 @@ body {
 	display: inline-block;
 	margin: 5px;
 	width: 50%;
-	text-shadow: 1px 0px 2px  black;
+	text-shadow: 1px 0px 2px black;
 }
 
 .alert {
@@ -52,9 +51,8 @@ body {
 	color: rgb(233, 127, 52);
 	margin: 24px 20%;
 	font-size: 1.6rem;
-	
+
 	border-radius: 50px;
-	/* box-shadow: 0px 0px 40px 1px rgb(164, 207, 44); */
 	box-shadow: 0px 0px 40px 1px rgb(233, 127, 52);
 	animation: alert 8s ease-in-out infinite;
 }
@@ -88,11 +86,12 @@ body {
 	padding: 3px;
 	background-color: rgb(65, 57, 53);
 	color: rgb(233, 127, 52);
-	text-shadow: 1px 0px 2px  black;
+	text-shadow: 1px 0px 2px black;
 	box-shadow: 0px 0px 15px 2px rgb(65, 57, 53);
 }
 
-.keyboardEng {
+.keyboardEng,
+.keyboardRus {
 	position: relative;
 	margin: 3px;
 	padding: 1.8% 2.2%;
@@ -104,7 +103,8 @@ body {
 	transition: 0.4s;
 }
 
-.keyboardEng:hover {
+.keyboardEng:hover,
+.keyboardRus:hover {
 	border-radius: 15px;
 	background: radial-gradient(rgb(119, 204, 40), rgb(16, 95, 5));
 	color: white;
@@ -114,10 +114,30 @@ body {
 	background-color: rgb(233, 127, 52);
 	border-radius: 50px;
 	color: rgb(65, 57, 53);
-	text-shadow: 0px 0px 4px  rgb(238, 232, 218);
+	text-shadow: 0px 0px 4px rgb(238, 232, 218);
+	animation: active 0.5s ease-in-out;
 }
 
-.keyboardEng.simple_key.active {
+@keyframes active {
+	0% {
+		transform: rotate(0deg);
+		background-color: rgb(104, 91, 84);
+		border-radius: 5px;
+	}
+	100% {
+		transform: rotate(360deg);
+		background-color: rgb(233, 127, 52);
+		border-radius: 50px;
+	}
+}
+
+.keyboardEng.simple_key.active,
+.keyboardRus.simple_key.active {
+	animation: simple_key 0.3s ease-in-out;
+}
+
+.keyboardEng.special.active,
+.keyboardRus.special.active {
 	animation: simple_key 0.3s ease-in-out;
 }
 
